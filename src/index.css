@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --grey: #1A1919;
+  --black: #000000;
+  --white: #FFFFFF;
+  --yellow:linear-gradient(
+    to right, 
+    #DC9A31 0%, 
+    #FCD15A 25%, 
+    #FEEFC5 50%, 
+    #FCD254 75%, 
+    #DC9A31 100%
+  );
+
+  --green: #2FA536;
+  --blue: #283989;
+  --purple: #9C34C2;
+  --orange: #EC722D;
+  --brown: #AD774E;
+  --light-blue: #1892D1;
+  --red: #E14C4C;
+  --melon: #D7C57A;
+  
+}
+
+
+
+
+body {
+  margin: 0;
+  background-color: var(--grey);
+  font-family: 'poppins', sans-serif !important;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--grey) var(--white);
+}
+
+
+
+h1{
+  font-size: clamp(18px, 2vw, 28px);
+}
+
+h2{
+  font-size: clamp(18px, 2vw, 28px);
+}
+
+h3{
+  font-size: clamp(14px, 2vw, 22px);
+}
+
+h4{
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: 600;
+}
+
+p{
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+
+.button-white{
+  background: var(--white);
+  color: var(--black);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.button-white::before {
+  content: '';
+  position: absolute;
+  top: -6px; bottom: -6px; left: -6px; right: -6px;
+  background: var(--yellow);
+  z-index: -1;
+  border-radius: 6px;
+  background-clip: border-box;
+}
+
+
+.button-black{
+  background: var(--grey);
+  color: var(--white);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+
+.button-black::before {
+  content: '';
+  position: absolute;
+  top: -6px; 
+  bottom: -6px; 
+  left: -6px; 
+  right: -6px;
+  background: var(--yellow);
+  z-index: -1;
+  border-radius: 6px;
+  background-clip: border-box;
+}
+
+.button-custom-black {
+  background-image: url('/src/Laura-home/Boton.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-color: hwb(0 100% 0% / 0);
+  height: 80px;
+  width: 260px;
+  color: var(--white); 
+  padding: 0; 
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.button-custom-black:hover {
+  transform: translateY(-2px);
+}
+
+.button-custom-white {
+  background-image: url('/src/Productos/Boton-white.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-color: hwb(0 100% 0% / 0);
+  height: 80px;
+  width: 260px;
+  color: var(--grey); 
+  padding: 0; 
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.button-custom-white:hover {
+  transform: translateY(-2px);
+}

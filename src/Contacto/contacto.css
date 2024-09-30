@@ -1,0 +1,99 @@
+.mensaje-inicio {
+    padding-bottom: 80px;
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.formulario{
+    padding: 50px;
+    display: flex;
+    gap:80px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+form {
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    background-color: var(--grey);
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+@media(max-width:1010px){
+    .formulario {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contimg{
+        display: none;
+    }
+
+} 
+
+.contimg {
+    width: 40%;
+}
+.contimg img{
+    max-width: 100%;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+
+form {
+    width: 500px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    background-color: #fff;
+    color: #000;
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    align-self: center;
+}
+
+
+
+/* ------- MEDIA QUERIES -------- */
+@media screen and (max-width: 500px){
+    .formulario{
+        flex-direction: column;
+    }
+
+    .mensaje-inicio {
+        padding-bottom: 40px;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .contimg{
+        display: none;
+    }
+
+    form {
+        width: 100%;
+    }
+}

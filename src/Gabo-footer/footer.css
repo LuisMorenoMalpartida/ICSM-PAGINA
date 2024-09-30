@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    color: var(--white);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: var(--black);
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-logo{
+    padding-top: 2.2rem;
+}
+
+.container-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem 0;
+    border-bottom: 2px solid var(--white);
+}
+
+
+.logo-footer{
+    padding-top: 30px;
+    width: 210px;
+}
+
+.direccion h2{
+    font-size: 18px;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.soport-legal{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+
+.soport-legal h2{
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 18px;
+    padding: 10px 0;
+}
+.soport-legal ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+.redes h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+.red{
+    width: 52px;
+}
+/* .red-yt{
+    width: 110px;
+} */
+
+.cont-redes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1rem;
+    gap: 25px;
+}
+.footer h3{
+    margin-top: 2.8rem;
+    font-size: 20px;
+}
+
+.map-frame {
+    width: 380px;
+    height: 222px;
+    border: none;
+}
+
+@media (max-width: 420px) {
+    .map-frame {
+        width: 270px;
+        height: 151px; 
+    }
+}
+@media (max-width:1200px){
+    .footer h3{
+        font-size: 15px;
+    }
+
+    .footer-logo{
+        padding-top:0px;
+    }
+
+    .container-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+        padding: 3rem 0;
+        border-bottom: 2px solid var(--white);
+    }
+
+    .direccion h2{
+        text-align: center;
+    }
+
+    .soport-legal{
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .soport-legal h2{
+        text-align: center;
+    }
+
+    .soport-legal ul{
+        text-align: center;
+    }
+
+    .cont-redes{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding: 20px;
+        padding-inline: 40px;
+    }
+
+    .red{
+        width: 60px;
+    }
+
+    
+}

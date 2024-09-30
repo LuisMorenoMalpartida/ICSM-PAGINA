@@ -1,0 +1,152 @@
+.testimonial-container {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #1a1a1a;
+  color: var(--black);
+  text-align: center;
+}
+
+.title-testimonial h2 {
+  padding-bottom: 80px;
+  margin: 0;
+  color: var(--white);
+}
+
+.testimonial-carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-list {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 50px;
+  justify-content: center;
+}
+
+.testimonial-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 35px;
+  padding-top: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  position: relative;
+  text-align: left;
+  gap: 25px;
+  max-width: 530px;
+  height: 230px;
+  width: 90%;
+  overflow: hidden;
+}
+
+.testimonial-card::before,
+.testimonial-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: var(--yellow);
+  z-index: 1;
+}
+
+.testimonial-card::before {
+  top: 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.testimonial-card::after {
+  bottom: 0;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.testimonial-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.testimonial-content {
+  flex: 1;
+  text-overflow: ellipsis;
+}
+
+.testimonial-name {
+  margin: 0;
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: 700px;
+  padding-bottom: 20px;
+}
+
+.testimonial-controls {
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.testimonial-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 5px; 
+  margin: 0 4px;
+  cursor: pointer;
+  font-size: 0.75rem; 
+  transition: background-color 0.3s;
+}
+
+.testimonial-btn:hover {
+  background-color: #555;
+}
+
+.circle-btn {
+  width: 10px; 
+  height: 10px; 
+  line-height: 10px; 
+}
+
+.testimonial-btn.active {
+  background-color: var(--white);
+}
+
+.testimonial-comment{
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+  
+
+  @media (min-width: 1080px) {
+
+    .testimonial-card {
+      background-color: var(--white);
+      border-radius: 8px;
+      padding: 35px;
+      padding-top: 50px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: flex;
+      position: relative;
+      text-align: left;
+      gap: 25px;
+      max-width: 530px;
+      height: 230px;
+      width: 100%;
+    }
+
+    .testimonial-img {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+    }
+  }
+
+  ::selection {
+    background-color: var(--white);
+    color: var(--grey);
+  }
