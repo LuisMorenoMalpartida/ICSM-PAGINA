@@ -91,6 +91,18 @@
 .text-float4 {
   animation-delay: 1.5s;
 }
+.text-float5{
+  animation-delay: 1.5s;
+}
+.text-float6{
+  animation-delay: 1.5s;
+}
+.text-float7{
+  animation-delay: 1.5s;
+}
+.text-float8{
+  animation-delay: 1.5s;
+}
 
 @keyframes float {
   0% {
