@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import "./nosotros.css";
-import footer from "../Gabo-footer/footer";
-import navbar from "../Luis-header/navbar";
 import nosotros from "./nosotros.png";
 import ingeniero from "./PERFIL DEL EXPOSITOR 1.png";
 import tesla from "./teslaApretada.png";
@@ -19,11 +17,10 @@ function Nosotros() {
           <div className="mision">
             <h2>Misión</h2>
             <p>
-              Es impulsar la innovación y sostenibilidad en la industria minera
-              y en áreas clave como tecnologías ambientales, ingeniería del agua
-              y seguridad industrial. Nos comprometemos a ofrecer soluciones
-              científicas y técnicas que promuevan un desarrollo sostenible,
-              optimizando procesos y minimizando el impacto ambiental.
+            Es impulsar la innovación y sostenibilidad en los diferentes 
+            sectores industriales, brindando soluciones científicas y técnicas 
+            que promueven un desarrollo sostenible, optimizando procesos y 
+            minimizando el impacto ambiental.
             </p>
           </div>
         </section>
@@ -32,11 +29,11 @@ function Nosotros() {
           <div className="vision">
             <h2>Visión</h2>
             <p>
-              Nuestra vision es ser reconocidos como una compañía inclusiva e
-              interdisciplinaria que adapte correctamente la tecnología a una
-              industria sostenible. Formaremos científicos que lideren en su
-              área de trabajo, asumiendo un compromiso con la responsabilidad
-              sustentable en todas las actividades que realicen.
+            Nuestra vision es ser reconocidos como una compañía 
+            inclusiva e interdisciplinaria que adapte correctamente 
+            la tecnología para una industria sostenible. Formaremos 
+            científicos que lideren en su área de trabajo, asumiendo 
+            responsabilidad ambiental en todas las actividades que realicen.
             </p>
           </div>
         </section>
@@ -67,11 +64,11 @@ function Nosotros() {
           <div>
             <h2>Conoce a Titán y a Tesla</h2>
             <p>
-              En el Instituto Científico Minero, Tesla y Titán son los rostros
-              amigables de nuestro compromiso con ciencia y la sostenibilidad.
-              Con su actitud siempre positiva y su enfoque en la seguridad,
-              estas mascotas nos recuerdan que la ciencia es un esfuerzo
-              colectivo lleno de energía y dedicación.
+            En el Instituto Científico Sostenible Minero, Tesla y Titán son los
+             rostros amigables de nuestro compromiso con la ciencia y la 
+             sostenibilidad. Con su actitud siempre positiva y su enfoque en la 
+             investigación científica, estas mascotas nos recuerdan que la 
+             ciencia es un esfuerzo colectivo lleno de energía y dedicación.
             </p>
           </div>
           <div className="tesla-titan">
