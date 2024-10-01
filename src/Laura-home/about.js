@@ -53,10 +53,9 @@ const About = () => {
         break;
       case 'servicios':
         setFloatingText({
-          text1: '🔍 Consultoría 🔍',
-          text2: '🧪 Diseño de Reactores 🧪',
-          text3: '🌱 Ensayo Ambiental 🌱',
-          text4: '📝 Asesoramiento 📝'
+          text1: '⛏️ Servicios Integrales de Monitoreo y Ensayos Ambientales ⚒️',
+          text2: '💧 Diseño de Reactores para Tratamiento de Aguas Residuales 💧',
+          text3: '🌿 Asesoramiento de Trabajos de Investigación y Postgrado 🌿',
         });
         setButtonText('Conoce todos nuestros servicios');
         setButtonLink('/servicios');
