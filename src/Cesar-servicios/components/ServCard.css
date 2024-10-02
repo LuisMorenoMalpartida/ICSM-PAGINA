@@ -1,59 +1,60 @@
 .servcard {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  border-radius: 6px;
-  gap: 25px;
-  padding: 40px;
-  max-height: 600px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   text-align: center;
+   border-radius: 6px;
+   gap: 25px;
+   padding: 40px;
+   max-height: 600px;
 }
 
 .servcard img {
-  max-width: 300px;
-  height: 200px;
-  border-radius: 6px;
-  transition: transform 0.3s ease;
-  &:hover {
-    transform: scale(1.1);
-  }
+   max-width: 400px;
+   height: 200px;
+   border-radius: 6px;
+   transition: transform 0.3s ease;
+
+   &:hover {
+      transform: scale(1.1);
+   }
 }
 
-.servcard-info{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
+.servcard-info {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 20px;
 }
 
-.servcard-info button{
-  align-self: center;
+.servcard-info button {
+   align-self: center;
 }
 
 @media screen and (max-width: 900px) {
-  .servcard {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-    padding: 30px;
-    width: 100%;
-  }
+   .servcard {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+      padding: 30px;
+      width: 100%;
+   }
 
-  .servcard-info{
-    align-items: center;
-  }
+   .servcard-info {
+      align-items: center;
+   }
 
-  .servcard img {
-    max-width: 100%;
-    height: auto;
-  }
+   .servcard img {
+      max-width: 100%;
+      height: auto;
+   }
 
-  .servcard h2 {
-    font-size: 1.5em;
-  }
+   .servcard h2 {
+      font-size: 1.5em;
+   }
 
-  .servcard button {
-    padding: 5px 10px;
-  }
+   .servcard button {
+      padding: 5px 10px;
+   }
 }
