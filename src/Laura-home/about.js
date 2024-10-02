@@ -93,7 +93,7 @@ const About = () => {
             <div className="card-body-about">
               <h3 className="card-title-about">Cursos</h3>
               <p className="card-text-about">
-                Aprende de expertos con cursos virtuales y presenciales.
+              Aprende de Ingenieros e Investigadores Científicos con Cursos Virtuales y Presenciales.
               </p>
             </div>
           </div>
@@ -106,9 +106,9 @@ const About = () => {
           >
             <img src={img2} className="card-img-top icon" alt="Productos" />
             <div className="card-body-about">
-              <h3 className="card-title-about">Productos</h3>
+              <h3 className="card-title-about">Productos de Calidad</h3>
               <p className="card-text-about">
-                Herramientas de calidad para comprar o alquilar.
+              Implementación de laboratorios con instrumentos científicos para comprar o alquilar.
               </p>
             </div>
           </div>
@@ -121,9 +121,9 @@ const About = () => {
           >
             <img src={img3} className="card-img-top icon" alt="Servicios" />
             <div className="card-body-about">
-              <h3 className="card-title-about">Servicios</h3>
+              <h3 className="card-title-about">Servicios Eficientes</h3>
               <p className="card-text-about">
-                Asesoría en investigación, laboratorio y campo.
+              Asesoría Científica Empresarial, Laboratorio y Campo.
               </p>
             </div>
           </div>
