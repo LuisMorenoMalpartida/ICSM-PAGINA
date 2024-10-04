@@ -14,7 +14,7 @@ const Contacto = () => {
         </div>
         <div className=''>
           <form action="https://formsubmit.co/gabrielsaravia130204@gmail.com" method="POST" >
-            <h3 for="name">Contactenos</h3>
+            <h3 for="name">Contáctenos</h3>
 
             {/* <label for="name">Nombre</label> */}
             <input type="text" name="name" id="name" placeholder="Nombre..." required></input>

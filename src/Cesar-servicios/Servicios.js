@@ -66,12 +66,12 @@ const Servicios = () => {
           onOpenModal={() => openModal([img13, img10], "Asesoramiento Científico", "Apoyo especializado para la elaboración de tesinas y tesis de pregrado y postgrado.")}
           
         />
-        <Servcard
+        <ServCard
           imgSrc={imagen4}
           title="Asistencia Ambiental"
           onOpenModal={() => openModal([img23, img19], "Asistencia Ambiental", "Ofrece apoyo y asesoría para cumplir con normativas ambientales y reducir el impacto ecológico, promoviendo prácticas sostenible")}
-          
         />
+
         <ServCard
           imgSrc={imagen5}
           title="Consultoria"
