@@ -4,7 +4,7 @@ export const ServBanner = () => {
   return (
     <div className="servbanner">
       <div className="overlay"></div>
-      <h1>ASESORÍA Y TRATAMIENTO<br/> AMBIENTAL</h1>
+      <h1>ASESORIA CIENTIFICA EMPRESARIAL,<br/>LABORATORIO Y CAMPO</h1>
     </div>
   );
 };
