@@ -1,37 +1,67 @@
 import React, { useState, useEffect } from 'react';
 import './testimonial.css';
+import p1 from './img_pers/p1.jpg';
+import p2 from './img_pers/p2.jpg';
+import p3 from './img_pers/p3.jpg';
+import p4 from './img_pers/p4.jpg';
+import p5 from './img_pers/p5.jpg';
+import p6 from './img_pers/p6.jpg';
+import p7 from './img_pers/p7.jpg';
+import p8 from './img_pers/p8.jpg';
+import p9 from './img_pers/p9.jpg';
+import p10 from './img_pers/p10.jpg';
 
 const testimonials = [
   {
-    img: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_1.jpeg",
-    user: "Luis Fernández, Químico",
-    comment: "El curso presencial fue excelente. Aprendí técnicas prácticas que ya uso en mi trabajo. ¡Muy recomendable!",
+    img: p1,
+    user: "Ruth Karen Serrano Sumi",
+    comment: "El ICSM es una excelente alternativa. Ofrecen programas de formación tanto virtuales como presenciales, con especilidades."
   },
   {
-    img: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_2.jpeg",
-    user: "Ana Arias, Ingeniera Ambiental",
-    comment: "Interactuar con los expertos y usar el reactor digital en el curso ha sido invaluable para mi trabajo.",
+    img: p2,
+    user: "Lisely Paredes",
+    comment: "El ICSM es una empresa ideal para adquirir conocimientos y desarrollar habilidades en el sector minero."
   },
   {
-    img: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_3.jpeg",
-    user: "Carlos Ruiz, Ingeniero Civil",
-    comment: "La capacitación fue completa y práctica. Ahora tengo las habilidades que necesitaba para mi investigación.",
+    img: p3,
+    user: "Sherley Rimac",
+    comment: "Estoy muy impresionada con el ICSM, hacen un excelente trabajo. Su profesionalismo y compromiso con la sostenibilidad son evidentes en cada proyecto que emprenden."
   },
   {
-    img: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_4.jpeg",
-    user: "María López, Biotecnóloga",
-    comment: "Los talleres me permitieron probar los productos en acción. La calidad y el soporte fueron excepcionales.",
+    img: p4,
+    user: "Jorge Alberto Sanchez Cajaleon",
+    comment: "El profesionalismo, compromiso y desarrollo del trabajo presentan caracteres de fidelidad con la sostenibilidad y apoyo a la investigación."
   },
   {
-    img: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_5.jpeg",
-    user: "Javier Soto, Técnico en Laboratorio",
-    comment: "El curso fue enriquecedor. Aprendí mucho y ya estoy aplicando los conocimientos.",
+    img: p5,
+    user: "Rosario Navarro",
+    comment: "Es impresionante el trabajo que realiza el ICSM, su dedicación a la investigación y a las buenas prácticas, está logrando un gran trabajo con sus capacitaciones, cursos y voluntariados."
   },
   {
-    img: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_6.jpeg",
-    user: "Laura Gómez, Investigadora",
-    comment: "Los equipos mejoraron significativamente la eficiencia en nuestro laboratorio. Estamos muy satisfechos.",
+    img: p6,
+    user: "Angélica Espinoza",
+    comment: "El ICSM es una excelente opción para quienes buscan mejorar su formación profesional. Ofrecen cursos y capacitaciones de alta calidad."
   },
+  {
+    img: p7,
+    user: "Sofia Adriana Mosquera Yturraran",
+    comment: "He quedado sorprendida con la gran dedicación a la investigación y el cuidado del agua por parte del ICSM. "
+  },
+  {
+    img: p8,
+    user: "Camila Alexandra Falcon Zapata",
+    comment: "Recomiendo al ICSM por su valiosa contribución al ámbito académico a través de sus cursos presenciales y virtuales, impartidos de manera clara y accesible."
+  },
+  {
+    img: p9,
+    user: "Isabel Sole Gutierrez Huarcaya",
+    comment: "ICSM es una empresa que se destaca por su buen ambiente laboral y su compromiso con el desarrollo sostenible y la protección del medio ambiente."
+  },
+  {
+    img: p10,
+    user: "Lizzeth Suca Acuta",
+    comment: "El ICSM destaca por combinar teoría y práctica, ofreciendo una formación académica y profesional completa gracias a su enfoque dinámico y compromiso con la calidad educativa."
+  }
 ];
 
 const Testimonial = () => {
@@ -96,6 +126,14 @@ const Testimonial = () => {
           <button
             onClick={() => goToIndex(2)}
             className={`testimonial-btn circle-btn ${currentIndex === 2 ? 'active' : ''}`}
+          ></button>
+          <button
+            onClick={() => goToIndex(3)}
+            className={`testimonial-btn circle-btn ${currentIndex === 3 ? 'active' : ''}`}
+          ></button>
+          <button
+            onClick={() => goToIndex(4)}
+            className={`testimonial-btn circle-btn ${currentIndex === 4 ? 'active' : ''}`}
           ></button>
         </div>
       </div>

@@ -7,10 +7,13 @@ import img3 from './servicios.png';
 
 const About = () => {
   const [floatingText, setFloatingText] = useState({
-    text1: '⛏️ Industria Minera ⚒️',
-    text2: '💧 Ingenieria del Agua 💧',
-    text3: '🌿 Agroalimentaria 🌿',
-    text4: '🌍 Medio Ambiente 🌍'
+    text1: '⛏️ Industria Minera',
+    text2: '💧 Industria Química',
+    text3: '🌿 Seguridad Industrial',
+    text4: '🌍 Ingenieria del Agua',
+    text5: '🌍 Medio Ambien',
+    text6: '🌍 AgroAlimentaria',
+    text7: '🌍 IA'
   });
 
   const [activeCard, setActiveCard] = useState('cursos');
@@ -23,10 +26,13 @@ const About = () => {
     switch (type) {
       case 'cursos':
         setFloatingText({
-          text1: '⛏️ Industria Minera ⚒️',
-          text2: '💧 Ingenieria del Agua 💧',
-          text3: '🌿 Agroalimentaria 🌿',
-          text4: '🌍 Medio Ambiente 🌍'
+          text1: '⛏️ Industria Minera',
+          text2: '💧 Industria Química',
+          text3: '🌿 Seguridad Industrial',
+          text4: '🌍 Ingenieria del Agua',
+          text5: '🌍 Medio Ambien',
+          text6: '🌍 AgroAlimentaria',
+          text7: '🌍 IA'
         });
         setButtonText('Conoce todos nuestros cursos');
         setButtonLink('/cursos');
@@ -36,27 +42,29 @@ const About = () => {
           text1: '🔬 Colorímetro DR900 🔬',
           text2: '💧 Tubidímetro 2100Q 💧',
           text3: '📊 Multiparámetro 2200 📊',
-          text4: '🌐 GPS Garmin 🌐'
+          text4: '🌐 PCSTESTR 35 🌐',
+          text5: '🌐 Medidor de Cloro Digital 🌐',
+          text6: '🌐 GPS Garmin Montana 650 🌐',
+          text7: '🌐 Multiparametro HQ46D🌐',
+          text8: '🌐 Reactor Digital DRB 200 🌐'
         });
         setButtonText('Conoce todos nuestros productos');
         setButtonLink('/productos');
         break;
       case 'servicios':
         setFloatingText({
-          text1: '🔍 Consultoría 🔍',
-          text2: '🧪 Diseño de Reactores 🧪',
-          text3: '🌱 Ensayo Ambiental 🌱',
-          text4: '📝 Asesoramiento 📝'
+          text1: '⛏️ Servicios Integrales de Monitoreo y Ensayos Ambientales ⚒️',
+          text2: '💧 Diseño de Reactores para Tratamiento de Aguas Residuales 💧',
+          text3: '🌿 Asesoramiento de Trabajos de Investigación y Postgrado 🌿',
         });
         setButtonText('Conoce todos nuestros servicios');
         setButtonLink('/servicios');
         break;
       default:
         setFloatingText({
-          text1: '⛏️ Industria Minera ⚒️',
-          text2: '💧 Ingenieria del Agua 💧',
-          text3: '🌿 Agroalimentaria 🌿',
-          text4: '🌍 Medio Ambiente 🌍'
+          text1: '⛏️ Servicios Integrales de Monitoreo y Ensayos Ambientales ⚒️',
+          text2: '💧 Diseño de Reactores para Tratamiento de Aguas Residuales 💧',
+          text3: '🌿 Asesoramiento de Trabajos de Investigación y Postgrado 🌿',
         });
         setButtonText('Conoce todos nuestros cursos');
         setButtonLink('/cursos');
@@ -85,7 +93,7 @@ const About = () => {
             <div className="card-body-about">
               <h3 className="card-title-about">Cursos</h3>
               <p className="card-text-about">
-                Aprende de expertos con cursos virtuales y presenciales.
+              Aprende de Ingenieros e Investigadores Científicos con Cursos Virtuales y Presenciales.
               </p>
             </div>
           </div>
@@ -98,9 +106,9 @@ const About = () => {
           >
             <img src={img2} className="card-img-top icon" alt="Productos" />
             <div className="card-body-about">
-              <h3 className="card-title-about">Productos</h3>
+              <h3 className="card-title-about">Productos de Calidad</h3>
               <p className="card-text-about">
-                Herramientas de calidad para comprar o alquilar.
+              Implementación de laboratorios con instrumentos científicos para comprar o alquilar.
               </p>
             </div>
           </div>
@@ -113,9 +121,9 @@ const About = () => {
           >
             <img src={img3} className="card-img-top icon" alt="Servicios" />
             <div className="card-body-about">
-              <h3 className="card-title-about">Servicios</h3>
+              <h3 className="card-title-about">Servicios Eficientes</h3>
               <p className="card-text-about">
-                Asesoría en investigación, laboratorio y campo.
+              Asesoría Científica Empresarial, Laboratorio y Campo.
               </p>
             </div>
           </div>
