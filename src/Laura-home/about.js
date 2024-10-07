@@ -53,9 +53,11 @@ const About = () => {
         break;
       case 'servicios':
         setFloatingText({
-          text1: '⛏️ Servicios Integrales de Monitoreo y Ensayos Ambientales ⚒️',
-          text2: '💧 Diseño de Reactores para Tratamiento de Aguas Residuales 💧',
-          text3: '🌿 Asesoramiento de Trabajos de Investigación y Postgrado 🌿',
+          text1: '⛏️ Análisis Integral ⚒️',
+          text2: '💧 Diseño de Reactores💧',
+          text3: '🌿 Asesoramiento Científico 🌿',
+          text4: '🌱 Asistencia Ambiental 🌍',
+          text5: '💼 Consultoría 📊'
         });
         setButtonText('Conoce todos nuestros servicios');
         setButtonLink('/servicios');
@@ -134,7 +136,9 @@ const About = () => {
       <div className="button-text-container">
         <div className="text-group">
           <div className="text-float text-float1">{floatingText.text1}</div>
-          <div className="text-float text-float2">{floatingText.text2}</div>
+          <div className="text-float text-float3">{floatingText.text3}</div>
+          <div className="text-float text-float5">{floatingText.text5}</div>
+          <div className="text-float text-float7">{floatingText.text7}</div>
         </div>
 
         <div className="button-container-about1">
@@ -144,8 +148,10 @@ const About = () => {
         </div>
 
         <div className="text-group">
-          <div className="text-float text-float3">{floatingText.text3}</div>
+        <div className="text-float text-float2">{floatingText.text2}</div>
           <div className="text-float text-float4">{floatingText.text4}</div>
+          <div className="text-float text-float6">{floatingText.text6}</div>
+          <div className="text-float text-float8">{floatingText.text8}</div>
         </div>
 
       </div>

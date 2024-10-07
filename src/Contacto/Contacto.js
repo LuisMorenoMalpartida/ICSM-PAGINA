@@ -13,7 +13,7 @@ const Contacto = () => {
           <img src={contimg} alt="contactoimg" />
         </div>
         <div className=''>
-          <form action="https://formsubmit.co/gabrielsaravia130204@gmail.com" method="POST" >
+          <form action="https://formsubmit.co/institutocientificosostenible@gmail.com" method="POST" >
             <h3 for="name">Contáctenos</h3>
 
             {/* <label for="name">Nombre</label> */}
