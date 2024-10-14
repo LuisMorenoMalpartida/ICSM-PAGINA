@@ -58,6 +58,11 @@ import img52 from "./tec_ambientales/img5.jpg";
 import img53 from "./tec_ambientales/img6.jpg";
 import img54 from "./tec_ambientales/img7.jpg";
 import img55 from "./tec_ambientales/img8.jpg";
+import img56 from "./todo/img1.jpeg";
+import img57 from "./todo/img2.jpeg";
+import img58 from "./todo/img3.jpeg";
+import img59 from "./todo/img4.jpeg";
+import img60 from "./todo/img5.jpeg";
 
 
 
@@ -250,6 +255,31 @@ const cursosData = [
   { img: img55, categoria: 'MEDIO AMBIENTE', modalidad: 'Virtual',
     url: 'https://wa.me/51930754024?text=' + 
     encodeURIComponent('Hola, estoy interesad@  en el curso de MONITOREO Y CONTROL DE LA CALIDAD DE SUELOS CONTAMINADOS modalidad Virtual. ¿Podrían brindarme más información?'),
+  },
+  {
+    img: img56, categoria: '', modalidad: 'Presencial',
+    url: 'https://wa.me/51930754024?text=' + 
+    encodeURIComponent('Hola, estoy interesad@ en el curso de MONITOREO DE LA CALIDAD DEL AGUA (CUSCO - RÍO HUATANAY), modalidad Presencial. ¿Podrían brindarme más información?'),
+  },
+  {
+    img: img57, categoria: '', modalidad: 'Presencial',
+    url: 'https://wa.me/51930754024?text=' + 
+    encodeURIComponent('Hola, estoy interesad@ en el curso de MONITOREO DE LA CALIDAD DEL AGUA (AREQUIPA - RÍO CHILI), modalidad Presencial. ¿Podrían brindarme más información?'),
+  },
+  {
+    img: img58, categoria: '', modalidad: 'Presencial',
+    url: 'https://wa.me/51930754024?text=' + 
+    encodeURIComponent('Hola, estoy interesad@ en el curso de ANÁLISIS DE PARÁMETROS (PUNO - LAGO TITICACA), modalidad Presencial. ¿Podrían brindarme más información?'),
+  },
+  {
+    img: img59, categoria: '', modalidad: 'Presencial',
+    url: 'https://wa.me/51930754024?text=' +
+    encodeURIComponent('Hola, estoy interesad@ en los CURSOS CIENTÍFICOS PRESENCIALES QUE SE DICTARÁN EN CUSCO (18 al 20 de Octubre). ¿Podrían brindarme más información?'),
+  },
+  {
+    img: img60, categoria: '', modalidad: 'Presencial',
+    url: 'https://wa.me/51930754024?text=' +
+    encodeURIComponent('Hola, estoy interesad@ en los CURSOS CIENTÍFICOS PRESENCIALES QUE SE DICTARÁN EN AREQUIPA (25 al 27 de Octubre). ¿Podrían brindarme más información?'),
   }
 ];
 
