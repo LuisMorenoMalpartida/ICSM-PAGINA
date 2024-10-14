@@ -43,10 +43,6 @@ const About = () => {
           text2: '💧 Tubidímetro 2100Q 💧',
           text3: '📊 Multiparámetro 2200 📊',
           text4: '🌐 PCSTESTR 35 🌐',
-          text5: '🌐 Medidor de Cloro Digital 🌐',
-          text6: '🌐 GPS Garmin Montana 650 🌐',
-          text7: '🌐 Multiparametro HQ46D🌐',
-          text8: '🌐 Reactor Digital DRB 200 🌐'
         });
         setButtonText('Conoce todos nuestros productos');
         setButtonLink('/productos');
