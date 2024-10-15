@@ -1,0 +1,95 @@
+#mascotas-inicio {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+  
+#mascotas-inicio .mascotas-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 100%;
+    padding: 40px;
+    margin: 0 auto;
+}
+  
+.mascotas-inicio h2 {
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+  
+#mascotas-inicio p {
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.izquierda-inicio{
+    left: 0;
+    animation: move-left 4s infinite alternate;
+    height: 200px;
+}
+.derecha-inicio{
+      right: 0;
+      animation: move-right 4s infinite alternate;
+      height: 200px;
+}
+
+@keyframes move-left{
+    0%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(4px);
+    }
+}
+
+@keyframes move-right{
+    0%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(-4px);
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .mascotas-inicio h2 {
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    
+    #mascotas-inicio p {
+        text-align: center;
+    
+    }
+    
+    .tesla-titan-inicio{
+        display: flex;
+    }
+    
+    .tesla-titan-inicio img{
+        height: 150px;
+    }
+
+    .izquierda-inicio{
+        width: 50%;
+        left: 0;
+        animation: move-left 4s infinite alternate;
+        height: 100px;
+    }
+
+    .derecha-inicio{
+        width: 50%;
+        right: 0;
+        animation: move-right 4s infinite alternate;
+        height: 100px;
+    }
+}
