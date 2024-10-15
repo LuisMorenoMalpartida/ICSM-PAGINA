@@ -30,16 +30,17 @@ const Lab = () => {
             <LabModal show={showModal} onClose={toggleModal} title="Laboratorio Científico">
               <h3 className="modal-lab-text" >Descubre el entorno donde la teoría se transforma en práctica</h3>
               <div className="video-container">
-                <iframe
-                  width="660"
-                  height="415"
-                  src="https://www.youtube.com/embed/3i82Fzpyq98?si=gmBDVmcPOd0V5TZ2"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe>
+              <iframe
+                width="660"
+                height="415"
+                src="https://www.youtube.com/embed/EOpLcKbxGKI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+
               </div>
             </LabModal>
           </div>
