@@ -6,6 +6,7 @@ import tesla from "./teslaApretada.png";
 import titan from "./titanApretado.png";
 //inicio de la funcion nosotros, mostrar los componentes
 //git add *
+//git commit -m "Actualización nosotros"
 
 function Nosotros() {
   return (
