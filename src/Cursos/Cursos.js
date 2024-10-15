@@ -369,7 +369,7 @@ const Cursos = () => {
             }}
             className={filtroCategoria === 'MEDIO AMBIENTE' ? style.active : ''}
           >
-            MEDIO AMBIENTE
+            TECNOLOGÍAS AMBIENTALES
           </button>
           <button
             onClick={() => {
@@ -378,7 +378,7 @@ const Cursos = () => {
             }}
             className={filtroCategoria === 'AGROALIMENTARIA' ? style.active : ''}
           >
-            AGROALIMENTARIA
+            INDUSTRIA AGROALIMENTARIA
           </button>
           <button
             onClick={() => {
@@ -387,7 +387,7 @@ const Cursos = () => {
             }}
             className={filtroCategoria === 'IA' ? style.active : ''}
           >
-            IA
+            INTELIGENCIA ARTIFICIAL
           </button>
         </div>
 

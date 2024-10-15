@@ -40,16 +40,10 @@ function Nosotros() {
       </div>
       <section id="historia">
         <div className="historia">
-          <h2>Historia</h2>
+          <h2>Instituto Científico Sostenible Minero</h2>
           <p>
-            Somos una empresa técnica, profesional y comercial. Comprometida en
-            la formación científica mediante la capacitación virtual y
-            presencial de cursos, asesorias, consultorias, analisis de
-            laboratorio, venta de reactores, equipos e instrumentos científicos.
-            Desarrollándonos en las diferentes industrias imprescindibles para
-            el futuro de la humanidad; Tratamiento de aguas, química, minera,
-            biotecnologica, Inteligencia artificial, energía sostenible y
-            agroalimentaria.
+          En ICSM,ofrecemos cursos científicos online y presenciales,asesoramiento científico para tesis de pregrado,postgrado y empresarial,ventas de equipos e instrumentos para laboratorios científicos e industrias,análisis y asistencia ambiental. <br />
+          Todo lo que necesitas está aquí,en un solo lugar.
           </p>
         </div>
       </section>
