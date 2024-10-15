@@ -7,13 +7,13 @@ import img3 from './servicios.png';
 
 const About = () => {
   const [floatingText, setFloatingText] = useState({
-    text1: '⛏️ Industria Minera',
-    text2: '💧 Industria Química',
-    text3: '🌿 Seguridad Industrial',
-    text4: '🌍 Ingenieria del Agua',
-    text5: '🌍 Medio Ambien',
-    text6: '🌍 AgroAlimentaria',
-    text7: '🌍 IA'
+    text1: '⛏️⚒️ Industria Minera',
+    text2: '🏭 Industria Química',
+    text3: '🦺 Seguridad Industrial',
+    text4: '💧 Ingenieria del Agua',
+    text5: '🛰️ Tecnologías Ambientales',
+    text6: '🍇 Industria Agroalimentaria',
+    text7: '🌍 Inteligencia Artificial'
   });
 
   const [activeCard, setActiveCard] = useState('cursos');
@@ -26,13 +26,13 @@ const About = () => {
     switch (type) {
       case 'cursos':
         setFloatingText({
-          text1: '⛏️ Industria Minera',
-          text2: '💧 Industria Química',
-          text3: '🌿 Seguridad Industrial',
-          text4: '🌍 Ingenieria del Agua',
-          text5: '🌍 Medio Ambien',
-          text6: '🌍 AgroAlimentaria',
-          text7: '🌍 IA'
+          text1: '⛏️⚒️ Industria Minera',
+          text2: '🏭 Industria Química',
+          text3: '🦺 Seguridad Industrial',
+          text4: '💧 Ingenieria del Agua',
+          text5: '🛰️ Tecnologías Ambientales',
+          text6: '🍇 Industria Agroalimentaria',
+          text7: '🌍 Inteligencia Artificial'
         });
         setButtonText('Conoce todos nuestros cursos');
         setButtonLink('/cursos');
@@ -49,11 +49,11 @@ const About = () => {
         break;
       case 'servicios':
         setFloatingText({
-          text1: '⛏️ Análisis Integral ⚒️',
-          text2: '💧 Diseño de Reactores💧',
-          text3: '🌿 Asesoramiento Científico 🌿',
-          text4: '🌱 Asistencia Ambiental 🌍',
-          text5: '💼 Consultoría 📊'
+          text1: '🧪 Análisis Integral 🧪',
+          text2: '🤖 Diseño de Reactores🤖',
+          text3: '👨🏻‍🚀 Asesoramiento Científico 🌿',
+          text4: '🌱 Asistencia Ambiental 🌱',
+          text5: '🔍 Consultoría 🔍'
         });
         setButtonText('Conoce todos nuestros servicios');
         setButtonLink('/servicios');

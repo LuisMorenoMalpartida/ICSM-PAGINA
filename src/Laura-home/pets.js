@@ -9,12 +9,12 @@ function Pets(){
                 <div>
                     <h2>Conoce a Titán y a Tesla</h2>
                     <p>
-                    En el Instituto Científico Minero, Tesla y Titán son los rostros
-                    amigables de nuestro compromiso con ciencia y la sostenibilidad.
-                    Con su actitud siempre positiva y su enfoque en la seguridad,
-                    estas mascotas nos recuerdan que la ciencia es un esfuerzo
-                    colectivo lleno de energía y dedicación.
-                    </p>
+            En el Instituto Científico Sostenible Minero, Tesla y Titán son los
+             rostros amigables de nuestro compromiso con la ciencia y la 
+             sostenibilidad. Con su actitud siempre positiva y su enfoque en la 
+             investigación científica, estas mascotas nos recuerdan que la 
+             ciencia es un esfuerzo colectivo lleno de energía y dedicación.
+            </p>
                 </div>
                 <div className="tesla-titan-inicio">
                     <img src={tesla} alt="tesla" class="izquierda-inicio" />
