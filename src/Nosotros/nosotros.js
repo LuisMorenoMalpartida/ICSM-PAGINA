@@ -4,8 +4,7 @@ import nosotros from "./nosotros.png";
 import ingeniero from "./PERFIL DEL EXPOSITOR 1.png";
 import tesla from "./teslaApretada.png";
 import titan from "./titanApretado.png";
-//inicio de la funcion nosotros, mostrar los componentes
-//git add src/Nosotros/nosotros.js
+//inicio de la funcion nosotros, mostrar los componentes"
 
 function Nosotros() {
   return (
