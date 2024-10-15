@@ -5,6 +5,8 @@ import ingeniero from "./PERFIL DEL EXPOSITOR 1.png";
 import tesla from "./teslaApretada.png";
 import titan from "./titanApretado.png";
 //inicio de la funcion nosotros, mostrar los componentes
+//git add *
+
 function Nosotros() {
   return (
     <div>
