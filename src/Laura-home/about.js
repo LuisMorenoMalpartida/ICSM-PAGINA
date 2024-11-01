@@ -89,7 +89,7 @@ const About = () => {
           >
             <img src={img1} className="card-img-top icon" alt="Cursos" />
             <div className="card-body-about">
-              <h3 className="card-title-about">Cursos</h3>
+              <h3 className="card-title-about">Cursos científicos</h3>
               <p className="card-text-about">
               Aprende de Ingenieros e Investigadores Científicos con Cursos Virtuales y Presenciales.
               </p>
