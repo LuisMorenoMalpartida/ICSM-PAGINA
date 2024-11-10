@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import slide1 from './carrusel4.png';
-import slide2 from './img3analisis.jpeg';
-import slide3 from './carrusel3.jpg';
+import slide1 from './carrusel-1.jpeg';
+import slide2 from './carrusel-2.jpg';
+import slide3 from './carrusel-3.jpg';
 import './carousel.css';
 
 const Carousel = () => {
@@ -44,28 +44,20 @@ const Carousel = () => {
               className="d-block w-100"
             />
           </Link>
-          <div className="carousel-caption top-right-caption">
-            <h2 className="title-carrusel">INVESTIGACIÓN<br/> CIENTÍFICA SOSTENIBLE</h2>
-            <p className="p-carrusel1">Científicos en acción</p>
-          </div>
         </div>
         <div className="carousel-item">
           <img
-            src={slide3}
+            src={slide2}
             alt="CIENCIA EN EL CAMPO"
             className="d-block w-100"
           />
         </div>
         <div className="carousel-item">
           <img
-            src={slide2}
+            src={slide3}
             alt="Ambiente Sofisticado"
             className="d-block w-100"
           />
-          <div className="carousel-caption top-right-caption">
-            <h2 className="title-carrusel">ENFRENTANDO<br/> DESAFÍOS CIENTÍFICOS</h2>
-            <p className="p-carrusel1">Juntos en el aprendizaje</p>
-          </div>
         </div>
       </div>
     </div>
