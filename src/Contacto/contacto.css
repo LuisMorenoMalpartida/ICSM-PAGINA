@@ -63,6 +63,7 @@ textarea {
     resize: vertical;
     background-color: #fff;
     color: #000;
+    resize: none;
 }
 
 input[type="submit"] {

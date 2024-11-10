@@ -52,7 +52,7 @@ const ProductCatalog = () => {
     },
     {
       id: 3,
-      name: "TUBIDIAMETRO 2100Q",
+      name: "TURBIDIMETRO 2100Q",
       description: [
         "• Monitoreo Ambiental",
         "• Tratamiento de Aguas",

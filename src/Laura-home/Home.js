@@ -6,6 +6,7 @@ import About from "./about";
 import Modal from "../Deyvis-lab/LabModal"
 import Testimonial from "./testimonial";
 import Lab from "./lab"
+import Pets from "./pets"
 
 const Home = () => {
 
@@ -18,6 +19,7 @@ const Home = () => {
     <About/>
     <Lab/>
     <Testimonial/>
+    <Pets />
     </div>
   )
 }

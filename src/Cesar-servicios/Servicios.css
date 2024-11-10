@@ -33,6 +33,28 @@ body {
    flex: 1 1 calc(25% - 20px); 
    box-sizing: border-box; 
  }
+ .servcard1{
+  margin-left: -480px;
+ }
+ .servcard2{
+  position: relative;
+  margin-left: -180px;
+ }
+ .servcard3{
+  width: -30px;
+  height: auto;
+  margin-right: -900px ;
+  margin-top: -426px;
+ }
+ .servcard4{
+  margin-left: -650px;
+
+ }
+ .servcard5{
+  margin-right: -630px;
+  margin-top: -426px;
+
+ }
  
  @media screen and (max-width: 1200px) {
    .gallery {
@@ -50,5 +72,31 @@ body {
    .servicio-card img {
      width: 100%; 
    }
+
+   .servcard1{
+    margin-left: auto;
+    
+    
+   }
+   .servcard2{
+    margin-left: auto;
+  
+   }
+   .servcard3{
+    margin-right: auto;
+    margin-top: auto;
+    
+   
+   }
+   .servcard4{
+    margin-left: auto;
+    margin-top: auto;
+  
+   }
+   .servcard5{
+    margin-right:auto ;
+    margin-top: auto;
+   }
+
  }
  

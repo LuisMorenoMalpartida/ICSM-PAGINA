@@ -4,8 +4,27 @@ import nosotros from "./nosotros.png";
 import ingeniero from "./PERFIL DEL EXPOSITOR 1.png";
 import tesla from "./teslaApretada.png";
 import titan from "./titanApretado.png";
-//inicio de la funcion nosotros, mostrar los componentes
+import ContentBlock from "./components/ContentBlock";
+//inicio de la funcion nosotros, mostrar los componentes"
+
 function Nosotros() {
+  const objMV = [
+    {
+      claseId : "mision",
+      title : "Misión",
+      content : "Es impulsar la innovación y sostenibilidad en los diferentes sectores industriales, brindando soluciones científicas y técnicas que promueven un desarrollo sostenible, optimizando procesos y minimizando el impacto ambiental."
+    },
+    {
+      claseId : "vision",
+      title : "Visión",
+      content : "Nuestra vision es ser reconocidos como una compañía inclusiva e interdisciplinaria que adapte correctamente la tecnología para una industria sostenible. Formaremos científicos que lideren en su área de trabajo, asumiendo responsabilidad ambiental en todas las actividades que realicen."
+    },
+    {
+      claseId : "historia",
+      title : "Instituto Científico Sostenible Minero",
+      content : "En ICSM,ofrecemos cursos científicos online y presenciales,asesoramiento científico para tesis de pregrado,postgrado y empresarial,ventas de equipos e instrumentos para laboratorios científicos e industrias,análisis y asistencia ambiental. Todo lo que necesitas está aquí,en un solo lugar."
+    }
+  ]
   return (
     <div>
       <section className="nosotrosimg">
@@ -13,46 +32,13 @@ function Nosotros() {
       </section>
 
       <div className="container container-vi-mi">
-        <section id="mision">
-          <div className="mision">
-            <h2>Misión</h2>
-            <p>
-            Es impulsar la innovación y sostenibilidad en los diferentes 
-            sectores industriales, brindando soluciones científicas y técnicas 
-            que promueven un desarrollo sostenible, optimizando procesos y 
-            minimizando el impacto ambiental.
-            </p>
-          </div>
-        </section>
-
-        <section id="vision">
-          <div className="vision">
-            <h2>Visión</h2>
-            <p>
-            Nuestra vision es ser reconocidos como una compañía 
-            inclusiva e interdisciplinaria que adapte correctamente 
-            la tecnología para una industria sostenible. Formaremos 
-            científicos que lideren en su área de trabajo, asumiendo 
-            responsabilidad ambiental en todas las actividades que realicen.
-            </p>
-          </div>
-        </section>
+        {objMV.slice(0, 2).map((obj, index)=>{
+          return <ContentBlock claseId={obj.claseId} title={obj.title} content={obj.content}/>
+        })}
       </div>
-      <section id="historia">
-        <div className="historia">
-          <h2>Historia</h2>
-          <p>
-            Somos una empresa técnica, profesional y comercial. Comprometida en
-            la formación científica mediante la capacitación virtual y
-            presencial de cursos, asesorias, consultorias, analisis de
-            laboratorio, venta de reactores, equipos e instrumentos científicos.
-            Desarrollándonos en las diferentes industrias imprescindibles para
-            el futuro de la humanidad; Tratamiento de aguas, química, minera,
-            biotecnologica, Inteligencia artificial, energía sostenible y
-            agroalimentaria.
-          </p>
-        </div>
-      </section>
+
+      <ContentBlock claseId={objMV[2].claseId} title={objMV[2].title} content={objMV[2].content}/>
+
       <section id="gerentegeneral">
         <div className="gerentegeneral">
           <h2>Gerente General</h2>

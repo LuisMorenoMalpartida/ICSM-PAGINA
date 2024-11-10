@@ -1,7 +1,21 @@
 import React, { useState } from 'react';
 import contimg from './contacto.png';
 import './contacto.css';
+
 const Contacto = () => {
+  const [name, setName] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    const phoneNumber = '51930754024'; 
+    const textMessage = `Hola, mi nombre es ${name}. ${message}`;
+
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(textMessage)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <div>
       <div className='container mensaje-inicio'>
@@ -12,29 +26,37 @@ const Contacto = () => {
         <div className="contimg">
           <img src={contimg} alt="contactoimg" />
         </div>
-        <div className=''>
-          <form action="https://formsubmit.co/gabrielsaravia130204@gmail.com" method="POST" >
-            <h3 for="name">Contáctenos</h3>
+        <div>
+          <form onSubmit={handleSubmit}>
+            <h3>Contáctenos</h3>
 
-            {/* <label for="name">Nombre</label> */}
-            <input type="text" name="name" id="name" placeholder="Nombre..." required></input>
+            <input 
+              type="text" 
+              name="name" 
+              id="name" 
+              placeholder="Nombre..." 
+              value={name} 
+              onChange={(e) => setName(e.target.value)} 
+              required
+            />
 
-            {/* <label for="email">Correo electronico</label> */}
-            <input type="email" name="email" id="email" placeholder="Correo electrónico..." required></input>
+            <textarea 
+              name="message" 
+              id="message" 
+              placeholder="Escribe tu mensaje..." 
+              cols="30" 
+              rows="5" 
+              value={message} 
+              onChange={(e) => setMessage(e.target.value)} 
+              required
+            />
 
-            {/* <label for="coments">Mensaje</label> */}
-            <textarea name="coments" id="coments" cols="30" rows="5"></textarea>
-
-            {/* <button className="button-black" type='submit'> */}
-              <input type="submit" value="Enviar" className='button-custom-black' ></input>
-              {/* <p>Enviar</p>
-            </button> */}
-            
+            <input type="submit" value="Enviar" className='button-custom-black' />
           </form>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Contacto
+export default Contacto;

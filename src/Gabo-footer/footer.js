@@ -38,8 +38,8 @@ const Footer = () => {
                         <h2>Centro de soporte</h2>
                         <ul>
                             <li>930 754 024</li>
-                            <li>954 398 928</li>
-                            <li>0164 78101</li>
+                            <li>934 316 962</li>
+                            <li>(01) 6478101</li>
                         </ul>
                         </div>
 
