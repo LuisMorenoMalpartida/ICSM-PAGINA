@@ -32,7 +32,7 @@ const About = () => {
           text4: '💧 Ingenieria del Agua',
           text5: '🛰️ Tecnologías Ambientales',
           text6: '🍇 Industria Agroalimentaria',
-          text7: '🌍 Inteligencia Artificial'
+          text7: '🤖 Inteligencia Artificial'
         });
         setButtonText('Conoce todos nuestros cursos');
         setButtonLink('/cursos');
@@ -51,7 +51,7 @@ const About = () => {
         setFloatingText({
           text1: '🧪 Análisis Integral 🧪',
           text2: '🤖 Diseño de Reactores🤖',
-          text3: '👨🏻‍🚀 Asesoramiento Científico 🌿',
+          text3: '👨🏻‍🚀 Asesoramiento Científico 👩‍🚀',
           text4: '🌱 Asistencia Ambiental 🌱',
           text5: '🔍 Consultoría 🔍'
         });
@@ -73,10 +73,7 @@ const About = () => {
     <div className="container container-about">
       <h1>Instituto Científico Sostenible Minero</h1>
       <p>
-        En ICSM, ofrecemos cursos científicos online y presenciales, talleres
-        especializados, productos, y servicios diseñados específicamente para
-        científicos estudiantes del área de Ciencias Ambientales e Ingeniería
-        Aplicada.
+        En ICSM, ofrecemos cursos científicos online y presenciales, asesoramiento científico para tesis de pregrado, postgrado y empresarial, ventas de equipos e instrumentos para laboratorios científicos e industrias, análisis y asistencia ambiental. 
         <br /><br />
         Todo lo que necesitas está aquí, en un solo lugar.
       </p>
