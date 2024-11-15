@@ -9,12 +9,12 @@ import img6 from "./img6.png";
 import img7 from "./img7.png";
 import img8 from "./img8.png";
 import img9 from "./img9.png";
-import img10 from "./img10.png";
+import img10 from "./todo/img9.jpeg";
 import img11 from "./img11.png";
 import img12 from "./img12.png";
 import img13 from "./img13.png";
 import img14 from "./img14.png";
-import img15 from "./img15.png";
+import img15 from "./todo/img6.jpeg";
 import img16 from "./img16.png";
 import img17 from "./img17.png";
 import img18 from "./img18.png";
@@ -32,7 +32,7 @@ import img28 from "./img28.jpeg";
 
 //Nelson - Agregando imágenes
 import img29 from "./agroalimentaria/img1.jpg";
-import img30 from "./agroalimentaria/img2.jpg";
+import img30 from "./todo/img7.jpeg";
 import img31 from "./agroalimentaria/img3.jpg";
 import img32 from "./agroalimentaria/img4.jpg";
 import img33 from "./agroalimentaria/img5.jpg";
@@ -96,7 +96,7 @@ const cursosData = [
     encodeURIComponent('Hola, estoy interesad@  en el curso de REGLAMENTO DE PROTECCIÓN AMBIENTAL modalidad Virtual. ¿Podrían brindarme más información?'),},
   { img: img10, categoria: 'INGENIERIA DEL AGUA', modalidad: 'Presencial', 
     url: 'https://wa.me/51930754024?text=' + 
-    encodeURIComponent('Hola, estoy interesad@  en el curso de MONITOREO HIDROBIOLÓGICO modalidad Presencial. ¿Podrían brindarme más información?'),},
+    encodeURIComponent('Hola, estoy interesad@  en el curso de MONITOREO DE LA CALIDAD DEL AGUA EN LA LAGUNA EL PARAÍSO modalidad Presencial. ¿Podrían brindarme más información?'),},
   { img: img11, categoria: 'MEDIO AMBIENTE', modalidad: 'Virtual', 
     url: 'https://wa.me/51930754024?text=' + 
     encodeURIComponent('Hola, estoy interesad@  en el curso de PLANES DE CIERRE DE MINAS modalidad Virtual. ¿Podrían brindarme más información?'),},
@@ -109,9 +109,9 @@ const cursosData = [
   { img: img14, categoria: 'INDUSTRIA MINERA', modalidad: 'Virtual', 
     url: 'https://wa.me/51930754024?text=' + 
     encodeURIComponent('Hola, estoy interesad@  en el curso de ESPECTROMETRIA modalidad Virtual. ¿Podrían brindarme más información?'),},
-  { img: img15, categoria: 'INGENIERIA DEL AGUA', modalidad: 'Presencial', 
+  { img: img15, categoria: '', modalidad: 'Presencial', 
     url: 'https://wa.me/51930754024?text=' + 
-    encodeURIComponent('Hola, estoy interesad@  en el curso de MONITOREO DE CALIDAD DEL AGUA modalidad Presencial. ¿Podrían brindarme más información?'),},
+    encodeURIComponent('Hola, estoy interesad@ en los CURSOS CIENTÍFICOS PRESENCIALES QUE SE DICTARÁN EN CUSCO (13 al 15 de Diciembre). ¿Podrían brindarme más información?'),},
   { img: img16, categoria: 'IA', modalidad: 'Virtual', 
     url: 'https://wa.me/51930754024?text=' + 
     encodeURIComponent('Hola, estoy interesad@  en el curso de RPAS modalidad Virtual. ¿Podrían brindarme más información?'),},
@@ -153,9 +153,9 @@ const cursosData = [
   { img: img29, categoria: 'AGROALIMENTARIA', modalidad: 'Virtual',
     url: 'https://wa.me/51930754024?text=' + 
     encodeURIComponent('Hola, estoy interesad@  en el curso de INTERPRETACIÓN Y FORMACIÓN DE LA TRINORMA modalidad Virtual. ¿Podrían brindarme más información?'),},
-  { img: img30, categoria: 'AGROALIMENTARIA', modalidad: 'Presencial',
+  { img: img30, categoria: '', modalidad: 'Presencial', 
     url: 'https://wa.me/51930754024?text=' + 
-    encodeURIComponent('Hola, estoy interesad@  en el curso de PLAN HACCP EN INDUSTRIAS ALIMENTARIAS modalidad Presencial. ¿Podrían brindarme más información?'),},
+    encodeURIComponent('Hola, estoy interesad@ en los CURSOS CIENTÍFICOS PRESENCIALES QUE SE DICTARÁN EN PUNO (06 al 08 de Diciembre). ¿Podrían brindarme más información?'),},
   { img: img31, categoria: 'AGROALIMENTARIA', modalidad: 'Virtual',
     url: 'https://wa.me/51930754024?text=' + 
     encodeURIComponent('Hola, estoy interesad@  en el curso de TRATAMIENTO DE AGUAS RESIDUALES INDUSTRIALES PARA EL CUMPLIMIENTO DE LOS VMA modalidad Virtual. ¿Podrían brindarme más información?'),
