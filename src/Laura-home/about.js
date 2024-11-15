@@ -13,7 +13,7 @@ const About = () => {
     text4: '💧 Ingenieria del Agua',
     text5: '🛰️ Tecnologías Ambientales',
     text6: '🍇 Industria Agroalimentaria',
-    text7: '🌍 Inteligencia Artificial'
+    text7: '🤖 Inteligencia Artificial'
   });
 
   const [activeCard, setActiveCard] = useState('cursos');
