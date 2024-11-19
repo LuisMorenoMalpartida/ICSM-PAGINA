@@ -6,21 +6,10 @@ import slide3 from './carrusel-3.jpg';
 import slide4 from './imagenes/img10.jpeg';
 import slide5 from './imagenes/img11b.jpeg';
 import './carousel.css';
+import ImageContainer from './components/ImageContainer';
 
 const Carousel = () => {
-  const images = [
-    {
-      classDiv: "carousel-item",
-      src: slide2,
-      alt: "CIENCIA EN EL CAMPO",
-      classImage: "d-block w-100"
-    }, {
-      classDiv: "carousel-item",
-      src: slide3,
-      alt: "Ambiente Sofisticado",
-      classImage: "d-block w-100"
-    }
-  ];
+  const images = [slide2, slide3, slide4, slide5];
 
   return (
     <div
@@ -73,35 +62,10 @@ const Carousel = () => {
             />
           </Link>
         </div>
-        <div className="carousel-item">
-          <img
-            src={slide4}
-            alt="CIENCIA EN EL CAMPO"
-            className="d-block w-100"
-          />
-        </div>
-        <div className="carousel-item">
-          <img
-            src={slide5}
-            alt="CIENCIA EN EL CAMPO"
-            className="d-block w-100"
-          />
-        </div>
-      
-        <div className="carousel-item">
-          <img
-            src={slide2}
-            alt="CIENCIA EN EL CAMPO"
-            className="d-block w-100"
-          />
-        </div>
-        <div className="carousel-item">
-          <img
-            src={slide3}
-            alt="Ambiente Sofisticado"
-            className="d-block w-100"
-          />
-        </div>
+
+        {images.map((img)=>{
+          return <ImageContainer classDiv="carousel-item" src={img} classImg="d-block w-100"/>
+        })}
       </div>
     </div>
   );

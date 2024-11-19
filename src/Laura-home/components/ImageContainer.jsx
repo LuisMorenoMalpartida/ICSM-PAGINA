@@ -1,7 +1,9 @@
-function ImageContainer({classDiv, src, alt, classImg}){
+function ImageContainer({classDiv, src, classImg}){
     return (
         <div className={classDiv}>
-            <img src={src} alt={alt} className={classImg}/>
+            <img src={src} className={classImg}/>
         </div>
     );
 }
+
+export default ImageContainer;
