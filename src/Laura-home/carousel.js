@@ -6,6 +6,20 @@ import slide3 from './carrusel-3.jpg';
 import './carousel.css';
 
 const Carousel = () => {
+  const images = [
+    {
+      classDiv: "carousel-item",
+      src: slide2,
+      alt: "CIENCIA EN EL CAMPO",
+      classImage: "d-block w-100"
+    }, {
+      classDiv: "carousel-item",
+      src: slide3,
+      alt: "Ambiente Sofisticado",
+      classImage: "d-block w-100"
+    }
+  ];
+
   return (
     <div
       id="carouselExampleCaptions"
