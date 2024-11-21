@@ -7,9 +7,11 @@ import slide4 from './imagenes/img10.jpeg';
 import slide5 from './imagenes/img11b.jpeg';
 import './carousel.css';
 import ImageContainer from './components/ImageContainer';
+import Button from './components/Button';
 
 const Carousel = () => {
   const images = [slide2, slide3, slide4, slide5];
+  const buttonData = [1, 2, 3, 4];
 
   return (
     <div
@@ -27,30 +29,11 @@ const Carousel = () => {
           aria-current="true"
           aria-label="Slide 1"
         ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-         <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="3"
-          aria-label="Slide 4"
-        ></button>
-         <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="4"
-          aria-label="Slide 5"
-        ></button>
+
+        {buttonData.map((i)=>{
+          return <Button type="button" target="#carouselExampleCaptions" slide={i} label={`Slide ${i+1}`}/>
+        })}
+        
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
