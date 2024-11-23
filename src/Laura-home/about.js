@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import img1 from './cursos.png';
 import img2 from './productos.png';
 import img3 from './servicios.png';
+import SubSection from './components/SubSection';
 
 const About = () => {
   const [floatingText, setFloatingText] = useState({
@@ -69,6 +70,17 @@ const About = () => {
     }
   };
 
+  const sections = [{
+    title: 'Cursos Científicos',
+    content: 'Aprende de ingenieros e investigadores científicos con cursos virtuales y presenciales'
+  },{
+    title: 'Productos de Calidad',
+    content: 'Implementación de laboratorios con instrumentos científicos para comprar o alquilar.'
+  },{
+    title: 'Servicios Eficientes',
+    content: 'Asesoría Científica Empresarial, Laboratorio y Campo.'
+  }]
+
   return (
     <div className="container container-about">
       <h1>Instituto Científico Sostenible Minero</h1>
@@ -85,12 +97,7 @@ const About = () => {
             onClick={() => handleCardClick('cursos')}
           >
             <img src={img1} className="card-img-top icon" alt="Cursos" />
-            <div className="card-body-about">
-              <h3 className="card-title-about">Cursos científicos</h3>
-              <p className="card-text-about">
-              Aprende de Ingenieros e Investigadores Científicos con Cursos Virtuales y Presenciales.
-              </p>
-            </div>
+            <SubSection divClass="card-body-about" titleClass="card-title-about" contentClass="card-text-about" title={sections[0].title} content={sections[0].content}/>
           </div>
         </div>
 
@@ -100,12 +107,7 @@ const About = () => {
             onClick={() => handleCardClick('productos')}
           >
             <img src={img2} className="card-img-top icon" alt="Productos" />
-            <div className="card-body-about">
-              <h3 className="card-title-about">Productos de Calidad</h3>
-              <p className="card-text-about">
-              Implementación de laboratorios con instrumentos científicos para comprar o alquilar.
-              </p>
-            </div>
+            <SubSection divClass="card-body-about" titleClass="card-title-about" contentClass="card-text-about" title={sections[1].title} content={sections[1].content}/>
           </div>
         </div>
 
@@ -115,12 +117,7 @@ const About = () => {
             onClick={() => handleCardClick('servicios')}
           >
             <img src={img3} className="card-img-top icon" alt="Servicios" />
-            <div className="card-body-about">
-              <h3 className="card-title-about">Servicios Eficientes</h3>
-              <p className="card-text-about">
-              Asesoría Científica Empresarial, Laboratorio y Campo.
-              </p>
-            </div>
+            <SubSection divClass="card-body-about" titleClass="card-title-about" contentClass="card-text-about" title={sections[2].title} content={sections[2].content}/>
           </div>
         </div>
       </div>
