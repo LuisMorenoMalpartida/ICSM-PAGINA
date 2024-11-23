@@ -2,13 +2,17 @@ import React, { useState } from "react";
 import './Navbar.css';
 import logo from './logoActu.png';
 import { Link } from 'react-router-dom';
+import HeaderButton from './components/HeaderButton';
 
 const Navbar = () => {
+    const headerButton = ['inicio', 'cursos', 'productos', 'servicios', 'nosotros', 'contacto'];
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+
+    const capitalice = str => str[0].toUpperCase() + str.slice(1);
 
     return (
         <nav className="navbar">
@@ -19,26 +23,11 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className={`nav-links ${isOpen ? 'open' : ''}`}>
-                    <ul>
-                        <li>
-                            <a href="/" className="btn-nav ">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="/cursos" className="btn-curso">Cursos</a>
-                        </li>
-                        <li>
-                            <a href="/productos" className="btn-productos">Productos</a>
-                        </li>
-                        <li>
-                            <a href="/servicios" className="btn-servicios">Servicios</a>
-                        </li>
-                        <li>
-                            <a href="/nosotros" className="btn-nosotros">Nosotros</a>
-                        </li>
-                        <li>
-                            <a href="/contacto" className="btn-contacto">Contacto</a>
-                        </li>
-                    </ul>
+                    {headerButton.map((e, i)=>{
+                        if (e == "inicio") var href = "/";
+                        else var href = `/${e}`;
+                        return <HeaderButton key={i} href={href} classLi={`btn-${e}`} content={capitalice(e)}/>
+                    })}
                 </div>
                 <button className="hamburger" onClick={toggleMenu}>
                     <span className="bar"></span>

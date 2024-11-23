@@ -53,8 +53,8 @@ body {
     color: black;
 }
 
-.btn-nav,
-.btn-curso,
+.btn-inicio,
+.btn-cursos,
 .btn-productos,
 .btn-servicios,
 .btn-nosotros,
@@ -66,8 +66,8 @@ body {
     transition: transform 0.2s ease-in-out, background-color 0.1s ease-in-out;
 }
 
-.btn-nav:hover,
-.btn-curso:hover,
+.btn-inicio:hover,
+.btn-cursos:hover,
 .btn-productos:hover,
 .btn-servicios:hover,
 .btn-nosotros:hover,
@@ -154,8 +154,8 @@ body {
 
 @media (max-width: 600px) {
 
-    .btn-nav,
-    .btn-curso,
+    .btn-inicio,
+    .btn-cursos,
     .btn-productos,
     .btn-servicios,
     .btn-nosotros,
@@ -167,8 +167,8 @@ body {
         transition: transform 0.2s ease-in-out, background-color 0.1s ease-in-out;
     }
 
-    .btn-nav:hover,
-    .btn-curso:hover,
+    .btn-inicio:hover,
+    .btn-cursos:hover,
     .btn-productos:hover,
     .btn-servicios:hover,
     .btn-nosotros:hover,
