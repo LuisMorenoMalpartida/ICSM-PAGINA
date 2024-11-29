@@ -64,7 +64,8 @@ import img58 from "./todo/img3.jpeg";
 import img59 from "./todo/img4.jpeg";
 import img60 from "./todo/img5.jpeg";
 
-import SectionButton from './components/SectionButton';
+import Button from './components/Button';
+import ModeButton from './components/ModeButton';
 
 const cursosData = [
   { img: img1, categoria: 'SEGURIDAD INDUSTRIAL', modalidad: 'Virtual',
@@ -112,7 +113,7 @@ const cursosData = [
   { img: img15, categoria: '', modalidad: 'Presencial', 
     url: 'https://wa.me/51930754024?text=' + 
     encodeURIComponent('Hola, estoy interesad@ en los CURSOS CIENTÍFICOS PRESENCIALES QUE SE DICTARÁN EN CUSCO (13 al 15 de Diciembre). ¿Podrían brindarme más información?'),},
-  { img: img16, categoria: 'IA', modalidad: 'Virtual', 
+  { img: img16, categoria: 'INTELIGENCIA ARTIFICIAL', modalidad: 'Virtual', 
     url: 'https://wa.me/51930754024?text=' + 
     encodeURIComponent('Hola, estoy interesad@  en el curso de RPAS modalidad Virtual. ¿Podrían brindarme más información?'),},
   { img: img17, categoria: 'SEGURIDAD INDUSTRIAL', modalidad: 'Virtual', 
@@ -150,21 +151,21 @@ const cursosData = [
     encodeURIComponent('Hola, estoy interesad@  en el curso de DETOXIFICACIÓN DE CIANURO EN EFLUENTES MINEROS modalidad Virtual. ¿Podrían brindarme más información?'),},
 
   //Nelson - Agregando más cursos
-  { img: img29, categoria: 'AGROALIMENTARIA', modalidad: 'Virtual',
+  { img: img29, categoria: 'INDUSTRIA AGROALIMENTARIA', modalidad: 'Virtual',
     url: 'https://wa.me/51930754024?text=' + 
     encodeURIComponent('Hola, estoy interesad@  en el curso de INTERPRETACIÓN Y FORMACIÓN DE LA TRINORMA modalidad Virtual. ¿Podrían brindarme más información?'),},
   { img: img30, categoria: '', modalidad: 'Presencial', 
     url: 'https://wa.me/51930754024?text=' + 
     encodeURIComponent('Hola, estoy interesad@ en los CURSOS CIENTÍFICOS PRESENCIALES QUE SE DICTARÁN EN PUNO (06 al 08 de Diciembre). ¿Podrían brindarme más información?'),},
-  { img: img31, categoria: 'AGROALIMENTARIA', modalidad: 'Virtual',
+  { img: img31, categoria: 'INDUSTRIA AGROALIMENTARIA', modalidad: 'Virtual',
     url: 'https://wa.me/51930754024?text=' + 
     encodeURIComponent('Hola, estoy interesad@  en el curso de TRATAMIENTO DE AGUAS RESIDUALES INDUSTRIALES PARA EL CUMPLIMIENTO DE LOS VMA modalidad Virtual. ¿Podrían brindarme más información?'),
   },
-  { img: img32, categoria: 'AGROALIMENTARIA', modalidad: 'Virtual',
+  { img: img32, categoria: 'INDUSTRIA AGROALIMENTARIA', modalidad: 'Virtual',
     url: 'https://wa.me/51930754024?text=' + 
     encodeURIComponent('Hola, estoy interesad@  en el curso de PISCIGRANJAS DE TRUCHAS modalidad Virtual. ¿Podrían brindarme más información?'),
   },
-  { img: img33, categoria: 'AGROALIMENTARIA', modalidad: 'Virtual',
+  { img: img33, categoria: 'INDUSTRIA AGROALIMENTARIA', modalidad: 'Virtual',
     url: 'https://wa.me/51930754024?text=' + 
     encodeURIComponent('Hola, estoy interesad@  en el curso de MONITOREO Y CONTROL DE LA CALIDAD DE SUELOS CONTAMINADOS modalidad Virtual. ¿Podrían brindarme más información?'),
   },
@@ -180,7 +181,7 @@ const cursosData = [
     url: 'https://wa.me/51930754024?text=' + 
     encodeURIComponent('Hola, estoy interesad@  en el curso de TECNOLOGÍAS AVANZADAS DE OXIDACIÓN modalidad Virtual. ¿Podrían brindarme más información?'),
   },
-  { img: img37, categoria: 'IA', modalidad: 'Virtual',
+  { img: img37, categoria: 'INTELIGENCIA ARTIFICIAL', modalidad: 'Virtual',
     url: 'https://wa.me/51930754024?text=' + 
     encodeURIComponent('Hola, estoy interesad@  en el curso de ESPECTOMETRÍA DE REFLECTANCIA DE RAYOS INFRARROJOS EN LAS EXPLORACIONES MINERAS modalidad Virtual. ¿Podrían brindarme más información?'),
   },
@@ -310,7 +311,10 @@ const Cursos = () => {
     handleFiltroModalidad('TODO');
   }
 
-  const categoryDates = ['TODO', 'INDUSTRIA MINERA', 'INDUSTRIA QUIMICA', 'SEGURIDAD INDUSTRIAL', 'INGENIERIA DEL AGUA', 'MEDIO AMBIENTE', 'AGROALIMENTARIA', 'IA']
+  const modeButton = (mode) => handleFiltroModalidad(mode);
+
+  const categoryDates = ['TODO', 'INDUSTRIA MINERA', 'INDUSTRIA QUIMICA', 'SEGURIDAD INDUSTRIAL', 'INGENIERIA DEL AGUA', 'MEDIO AMBIENTE', 'INDUSTRIA AGROALIMENTARIA', 'INTELIGENCIA ARTIFICIAL']
+  const modeDates = ['Presencial', 'Virtual'];
 
   return (
     <div className={style.main_cursos}>
@@ -325,28 +329,15 @@ const Cursos = () => {
         {/* Filtros de Categoría */}
         <div className={`${style.filtros} container`}>
           {categoryDates.map((cat)=>{
-            return <SectionButton filterFuction={filterButton} category={cat} buttonClass={filtroCategoria === cat ? style.active : ''}/>
+            return <Button filterFuction={filterButton} category={cat} buttonClass={filtroCategoria === cat ? style.active : ''}/>
           })}
         </div>
 
         {/* Filtros de Modalidad */}
         <div className={`${style.modalidad} container`}>
-          <div className={style.buttonWrapper}>
-            <button
-              className={filtroModalidad === 'Presencial' ? 'button-white' : 'button-black'}
-              onClick={() => handleFiltroModalidad('Presencial')}
-            >
-              Presencial
-            </button>
-          </div>
-          <div className={style.buttonWrapper}>
-            <button
-              className={filtroModalidad === 'Virtual' ? 'button-white' : 'button-black'}
-              onClick={() => handleFiltroModalidad('Virtual')}
-            >
-              Virtual
-            </button>
-          </div>
+          {modeDates.map((mode)=>{
+            return <ModeButton divClass={style.buttonWrapper} buttonClass={filtroModalidad === mode ? 'button-white' : 'button-black'} filterFunction={modeButton} mode={mode}/>
+          })}
         </div>
 
         {/* Cursos filtrados */}

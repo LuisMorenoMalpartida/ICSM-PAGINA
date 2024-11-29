@@ -51,35 +51,35 @@ const Servicios = () => {
       <ServBanner />
       <div className="gallery">
       <div className="servcard1">
-      <ServCard
+        <ServCard
           imgSrc={imagen1}
           title="Análisis Integral"
           onOpenModal={() => openModal([img15, img17, img16], "Análisis Integral", "Realización de pruebas y análisis en laboratorio para evaluar la capacidad ambiental.")}
         />
       </div>
       <div className="servcard2">
-      <ServCard
+        <ServCard
           imgSrc={imagen2}
           title="Diseño de Reactores"
           onOpenModal={() => openModal([img12, img14], "Diseño de Reactores", "Desarrollo de reactores a nivel laboratorio y piloto para el tratamiento de aguas.")}
         />
       </div>
       <div className="servcard3">
-      <ServCard
+        <ServCard
           imgSrc={imagen3}
           title="Asesoramiento Científico"
           onOpenModal={() => openModal([img13, img10], "Asesoramiento Científico", "Apoyo especializado para la elaboración de tesinas y tesis de pregrado y postgrado.")}
         />
       </div>
       <div className="servcard4">
-      <ServCard
+        <ServCard
           imgSrc={imagen4}
           title="Asistencia Ambiental"
           onOpenModal={() => openModal([img23, img19], "Asistencia Ambiental", "Ofrece apoyo y asesoría para cumplir con normativas ambientales y reducir el impacto ecológico, promoviendo prácticas sostenible")}
         />
       </div>
       <div className="servcard5">
-      <ServCard
+        <ServCard
           imgSrc={imagen5}
           title="Consultoria"
           onOpenModal={() => openModal([img23, img22], " Consultoria", "Servicio especializado que ofrece asesoramiento experto para ayudar.")}

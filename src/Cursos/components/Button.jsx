@@ -1,4 +1,4 @@
-function SectionButton({filterFuction, category, buttonClass}){
+function Button({filterFuction, category, buttonClass}){
     return (
         <button onClick={()=>filterFuction(category)} className={buttonClass}>
             {category}
@@ -6,4 +6,4 @@ function SectionButton({filterFuction, category, buttonClass}){
     );
 }
 
-export default SectionButton;
+export default Button;
