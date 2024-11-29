@@ -1,13 +1,10 @@
 import React, {useState} from "react";
 import './footer.css';
 import logofooter from './image.png';
-import fb from './facebook.png';
-import tt from './Tik tok.png';
-import lin from './linkedin.png';
-import yt from './youtube.png';
-import insta from './instagram.png';
-import twi from './twitter.png';
 import { Link } from 'react-router-dom';
+import DataContainer from './components/DataContainer';
+import Icon from './components/Icon';
+import {dates, iconDates} from './utils/contans';
 
 const Footer = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -34,32 +31,16 @@ const Footer = () => {
                         </iframe>
                     </div>
                     <div className="soport-legal">
-                        <div>
-                        <h2>Centro de soporte</h2>
-                        <ul>
-                            <li>930 754 024</li>
-                            <li>934 316 962</li>
-                            <li>(01) 6478101</li>
-                        </ul>
-                        </div>
-
-                        <div>
-                        <h2>Legal</h2>
-                        <ul>
-                            <li>Política de Privacidad</li>
-                            <li>Términos & Condiciones</li>
-                        </ul>
-                        </div>
+                        {dates.map((e)=>{
+                            return <DataContainer title={e.title} dates={e.dates}/>
+                        })}
                     </div>
                     <div className="redes">
                         <h2>Redes sociales</h2>
-                        <div className="cont-redes">                            
-                        <a href="https://www.facebook.com/ICSMCIENTIFICO" target="_blank"><img src={fb} alt="Red" className="red"/></a>
-                        <a href="https://www.tiktok.com/@icsm_cientifico" target="_blank"><img src={tt} alt="Red" className="red"/></a>
-                        <a href="https://www.linkedin.com/company/71868312/admin/" target="_blank"><img src={lin} alt="Red" className="red"/></a>
-                        <a href="https://www.youtube.com/channel/UCzRVTsjxtrKqrRCPSNOejpQ" target="_blank"><img src={yt} alt="Red" className="red"/></a>
-                        <a href="https://www.instagram.com/icsmcientifico/?hl=es-la" target="_blank"><img src={insta} alt="Red" className="red"/></a>
-                        <a href="https://x.com/CientificoIcsm" target="_blank"><img src={twi} alt="Red" className="red"/></a>
+                        <div className="cont-redes">
+                            {iconDates.map((e)=>{
+                                return <Icon link={e.link} target="_blank" img={e.img} imgClass="red"/>
+                            })}                            
                         </div>
                     </div>
                 </div>

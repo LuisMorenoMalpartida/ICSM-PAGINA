@@ -64,7 +64,7 @@ import img58 from "./todo/img3.jpeg";
 import img59 from "./todo/img4.jpeg";
 import img60 from "./todo/img5.jpeg";
 
-
+import SectionButton from './components/SectionButton';
 
 const cursosData = [
   { img: img1, categoria: 'SEGURIDAD INDUSTRIAL', modalidad: 'Virtual',
@@ -305,6 +305,13 @@ const Cursos = () => {
     window.open(url, '_blank');
   };
 
+  const filterButton = (cat)=>{
+    handleFiltroCategoria(cat);
+    handleFiltroModalidad('TODO');
+  }
+
+  const categoryDates = ['TODO', 'INDUSTRIA MINERA', 'INDUSTRIA QUIMICA', 'SEGURIDAD INDUSTRIAL', 'INGENIERIA DEL AGUA', 'MEDIO AMBIENTE', 'AGROALIMENTARIA', 'IA']
+
   return (
     <div className={style.main_cursos}>
       <div className={style.cont_cursos}>
@@ -317,78 +324,9 @@ const Cursos = () => {
 
         {/* Filtros de Categoría */}
         <div className={`${style.filtros} container`}>
-          <button
-            onClick={() => {
-              handleFiltroCategoria('TODO');
-              handleFiltroModalidad('TODO');
-            }}
-            className={filtroCategoria === 'TODO' ? style.active : ''}
-          >
-            TODO
-          </button>
-          <button
-            onClick={() => {
-              handleFiltroCategoria('INDUSTRIA MINERA');
-              handleFiltroModalidad('TODO');
-            }}
-            className={filtroCategoria === 'INDUSTRIA MINERA' ? style.active : ''}
-          >
-            INDUSTRIA MINERA
-          </button>
-          <button
-            onClick={() => {
-              handleFiltroCategoria('INDUSTRIA QUIMICA');
-              handleFiltroModalidad('TODO');
-            }}
-            className={filtroCategoria === 'INDUSTRIA QUIMICA' ? style.active : ''}
-          >
-            INDUSTRIA QUIMICA
-          </button>
-          <button
-            onClick={() => {
-              handleFiltroCategoria('SEGURIDAD INDUSTRIAL');
-              handleFiltroModalidad('TODO');
-            }}
-            className={filtroCategoria === 'SEGURIDAD INDUSTRIAL' ? style.active : ''}
-          >
-            SEGURIDAD INDUSTRIAL
-          </button>
-          <button
-            onClick={() => {
-              handleFiltroCategoria('INGENIERIA DEL AGUA');
-              handleFiltroModalidad('TODO');
-            }}
-            className={filtroCategoria === 'INGENIERIA DEL AGUA' ? style.active : ''}
-          >
-            INGENIERIA DEL AGUA
-          </button>
-          <button
-            onClick={() => {
-              handleFiltroCategoria('MEDIO AMBIENTE');
-              handleFiltroModalidad('TODO');
-            }}
-            className={filtroCategoria === 'MEDIO AMBIENTE' ? style.active : ''}
-          >
-            TECNOLOGÍAS AMBIENTALES
-          </button>
-          <button
-            onClick={() => {
-              handleFiltroCategoria('AGROALIMENTARIA');
-              handleFiltroModalidad('TODO');
-            }}
-            className={filtroCategoria === 'AGROALIMENTARIA' ? style.active : ''}
-          >
-            INDUSTRIA AGROALIMENTARIA
-          </button>
-          <button
-            onClick={() => {
-              handleFiltroCategoria('IA');
-              handleFiltroModalidad('TODO');
-            }}
-            className={filtroCategoria === 'IA' ? style.active : ''}
-          >
-            INTELIGENCIA ARTIFICIAL
-          </button>
+          {categoryDates.map((cat)=>{
+            return <SectionButton filterFuction={filterButton} category={cat} buttonClass={filtroCategoria === cat ? style.active : ''}/>
+          })}
         </div>
 
         {/* Filtros de Modalidad */}
