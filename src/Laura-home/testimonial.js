@@ -10,6 +10,7 @@ import p7 from './img_pers/p7.jpg';
 import p8 from './img_pers/p8.jpg';
 import p9 from './img_pers/p9.jpg';
 import p10 from './img_pers/p10.jpg';
+import TestimonialButton from './components/TestimonialButton';
 
 const testimonials = [
   {
@@ -95,6 +96,8 @@ const Testimonial = () => {
     setCurrentIndex(index);
   };
 
+  const numbers = [0,1,2,3,4];
+
   return (
     <div className='testimonial-container'>
       <div className='title-testimonial'>
@@ -115,26 +118,9 @@ const Testimonial = () => {
           ))}
         </div>
         <div className='testimonial-controls'>
-          <button
-            onClick={() => goToIndex(0)}
-            className={`testimonial-btn circle-btn ${currentIndex === 0 ? 'active' : ''}`}
-          ></button>
-          <button
-            onClick={() => goToIndex(1)}
-            className={`testimonial-btn circle-btn ${currentIndex === 1 ? 'active' : ''}`}
-          ></button>
-          <button
-            onClick={() => goToIndex(2)}
-            className={`testimonial-btn circle-btn ${currentIndex === 2 ? 'active' : ''}`}
-          ></button>
-          <button
-            onClick={() => goToIndex(3)}
-            className={`testimonial-btn circle-btn ${currentIndex === 3 ? 'active' : ''}`}
-          ></button>
-          <button
-            onClick={() => goToIndex(4)}
-            className={`testimonial-btn circle-btn ${currentIndex === 4 ? 'active' : ''}`}
-          ></button>
+          {numbers.map((e, i) => {
+            return <TestimonialButton key={i} buttonClass={`testimonial-btn circle-btn ${currentIndex === e ? 'active' : ''}`} buttonFunction={goToIndex} number={e}/>
+          })}
         </div>
       </div>
     </div>
