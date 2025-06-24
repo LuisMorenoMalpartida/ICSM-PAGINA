@@ -63,6 +63,10 @@ import img57 from "./todo/img2.jpeg";
 import img58 from "./todo/img3.jpeg";
 import img59 from "./todo/img4.jpeg";
 import img60 from "./todo/img5.jpeg";
+import img61 from "./todo/img61.jpg";
+import img62 from "./todo/img62.jpg";
+import img63 from "./todo/img63.jpg";
+import img64 from "./todo/img64.jpg";
 
 import Button from './components/Button';
 import ModeButton from './components/ModeButton';
@@ -281,6 +285,26 @@ const cursosData = [
     img: img60, categoria: '', modalidad: 'Presencial',
     url: 'https://wa.me/51930754024?text=' +
     encodeURIComponent('Hola, estoy interesad@ en los CURSOS CIENTÍFICOS PRESENCIALES QUE SE DICTARÁN EN AREQUIPA (25 al 27 de Octubre). ¿Podrían brindarme más información?'),
+  },
+  { 
+    img: img61, categoria: '', modalidad: 'Presencial', 
+    url: 'https://wa.me/51930754024?text=' + 
+    encodeURIComponent('Hola, estoy interesad@ en el curso NUEVO CURSO 1 modalidad Presencial. Podrían brindarme más información?') 
+  },
+  { 
+    img: img62, categoria: '', modalidad: 'Presencial',
+    url: 'https://wa.me/51930754024?text=' + 
+    encodeURIComponent('Hola, estoy interesad@ en el curso NUEVO CURSO 2 modalidad Presencial. ¿Podrían brindarme más información?') 
+  },
+  { 
+    img: img63, categoria: '', modalidad: 'Presencial',
+    url: 'https://wa.me/51930754024?text=' +
+    encodeURIComponent('Hola, estoy interesad@ en el curso NUEVO CURSO 3 modalidad Presencial. ¿Podrían brindarme más información?') 
+  },
+  { 
+    img: img64, categoria: '', modalidad: 'Presencial',
+    url: 'https://wa.me/51930754024?text=' +
+    encodeURIComponent('Hola, estoy interesad@ en el curso NUEVO CURSO 4 modalidad Presencial. ¿Podrían brindarme más información?')
   }
 ];
 
