@@ -2,13 +2,19 @@
   bottom: 10px;
 }
 
+.carousel {
+  max-width: 2200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .carousel-inner {
   padding-top: 48px;
-  max-height: 220px;
+  max-height: 800px !important;  /* Limita la altura para la vista en móvil */
 }
 
 .carousel-item {
-  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+  transition: transform 2s ease-in-out, opacity 2s ease-in-out;
 }
 
 .carousel-item img {
@@ -56,3 +62,4 @@
     object-fit: cover; /* Cubre el área sin distorsionar la imagen */
   }
 }
+

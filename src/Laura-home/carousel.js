@@ -2,17 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import slide1 from './carrusel-1b.jpeg';
 import slide2 from './carrusel-2b.jpg';
-import slide3 from './carrusel-3.jpg';
 import slide4 from './imagenes/img10.jpeg';
-import slide5 from './imagenes/img11b.jpeg';
+//import slide5 from './imagenes/img11b.jpeg';
 import './carousel.css';
 import ImageContainer from './components/ImageContainer';
 import Button from './components/Button';
 
-const Carousel = () => {
-  const images = [slide2, slide3, slide4, slide5];
-  const buttonData = [1, 2, 3, 4];
+const images = [slide2, slide4];
+const buttonData = [1, 2, 3, 4];
 
+const Carousel = () => {
   return (
     <div
       id="carouselExampleCaptions"
@@ -29,13 +28,20 @@ const Carousel = () => {
           aria-current="true"
           aria-label="Slide 1"
         ></button>
-
-        {buttonData.map((i)=>{
-          return <Button type="button" target="#carouselExampleCaptions" slide={i} label={`Slide ${i+1}`}/>
+        {buttonData.map((i) => {
+          return (
+            <Button
+              key={i}
+              type="button"
+              target="#carouselExampleCaptions"
+              slide={i}
+              label={`Slide ${i + 1}`}
+            />
+          );
         })}
-        
       </div>
       <div className="carousel-inner">
+        {/*
         <div className="carousel-item active">
           <Link to="/">
             <img
@@ -45,9 +51,16 @@ const Carousel = () => {
             />
           </Link>
         </div>
-
-        {images.map((img)=>{
-          return <ImageContainer classDiv="carousel-item" src={img} classImg="d-block w-100"/>
+        */}
+        {images.map((img, idx) => {
+          return (
+            <ImageContainer
+              key={idx}
+              classDiv={idx === 0 ? "carousel-item active" : "carousel-item"}
+              src={img}
+              classImg="d-block w-100"
+            />
+          );
         })}
       </div>
     </div>
